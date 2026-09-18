@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Endowment Charts</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero-panel">
+        <img
+          class="chart-fallback hero-fallback"
+          src="first-chart-fallback.jpg"
+          alt="Total endowment supporting ASU rises from $613 million in FY16 through FY26."
+          decoding="async"
+          fetchpriority="high"
+        />
+        <div class="hero-chart-wrap">
+          <canvas
+            id="totalEndowmentChart"
+            aria-label="Total endowment supporting ASU"
+          ></canvas>
+        </div>
+      </section>
+
+      <section class="white-panel performance-panel">
+        <img
+          class="bubble-fallback"
+          src="bubble-chart-fallback.png"
+          alt="Investment performance: 1 year 15.7%, 3 years 11.6%, 5 years 8.2%, 10 years 10%, and 15 years 8.2%."
+          loading="lazy"
+          decoding="async"
+        />
+        <div
+          class="bubble-row"
+          id="performanceBubbles"
+          aria-label="Investment performance"
+        ></div>
+      </section>
+
+      <section class="white-panel allocation-panel">
+        <img
+          class="chart-fallback"
+          src="second-chart-fallback.png"
+          alt="Asset allocation: long-term investment pool 36.3%, private equity 27.1%, diversifying strategies 15%, fixed income 15.2%, real assets 5.7%, and cash 0.7%."
+          loading="lazy"
+          decoding="async"
+        />
+        <div class="chart-tall">
+          <canvas
+            id="allocationChart"
+            aria-label="Asset allocation chart"
+          ></canvas>
+        </div>
+      </section>
+
+      <section class="white-panel compact-panel">
+        <img
+          class="chart-fallback"
+          src="third-chart-fallback.png"
+          alt="Total endowed funds: 1,918 for students, 211 for faculty, 148 for academics, and 398 for other purposes."
+          loading="lazy"
+          decoding="async"
+        />
+        <div class="chart-compact">
+          <canvas
+            id="fundsTotalChart"
+            aria-label="Total endowed funds chart"
+          ></canvas>
+        </div>
+      </section>
+
+      <section class="white-panel compact-panel">
+        <img
+          class="chart-fallback"
+          src="fourth-chart-fallback.png"
+          alt="Endowed funds created: 34 for students, 9 for faculty, 15 for academics, and 6 for other purposes."
+          loading="lazy"
+          decoding="async"
+        />
+        <div class="chart-compact">
+          <canvas
+            id="fundsCreatedChart"
+            aria-label="Endowed funds created chart"
+          ></canvas>
+        </div>
+      </section>
+
+      <section class="white-panel beneficiaries-panel">
+        <img
+          class="chart-fallback"
+          src="fifth-chart-fallback.png"
+          alt="Endowment beneficiaries: students 30%, faculty 15%, academics 15%, and other beneficiaries 40%."
+          loading="lazy"
+          decoding="async"
+        />
+        <div class="beneficiary-chart">
+          <canvas
+            id="beneficiaryChart"
+            aria-label="Endowment beneficiaries chart"
+          ></canvas>
+        </div>
+      </section>
+    </main>
+
+    <script src="chart.umd.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
